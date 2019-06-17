@@ -1,0 +1,235 @@
+/*
+Theme Name: Twenty Nineteen Child
+Description: Guttenberg theme for Centurion group
+Author: 777zhm
+Template: twentynineteen
+Version: 1.0.0
+Text Domain: twentynineteen-child
+*/
+
+.site-logo {
+  position: relative;
+  z-index: 999;
+  margin-bottom: calc(.66 * 1rem);
+}
+
+@media only screen and (min-width: 768px) {
+  .site-logo {
+    margin-bottom: 0;
+    position: absolute;
+    right: calc(100% + (1.25 * 1rem));
+    top: 4px;
+    z-index: 999;
+  }
+}
+
+.site-logo .custom-logo-link {
+  border-radius: 0;
+  box-sizing: content-box;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  display: block;
+  width: 156px;
+  height: 40px;
+  overflow: hidden;
+  transition: box-shadow 200ms ease-in-out;
+}
+
+.site-logo .custom-logo-link .custom-logo {
+  min-height: inherit;
+}
+
+.site-logo .custom-logo-link:hover, .site-logo .custom-logo-link:active, .site-logo .custom-logo-link:focus {
+  box-shadow: 0 0 0 2px black;
+}
+
+@media only screen and (min-width: 768px) {
+  .site-logo .custom-logo-link {
+    width: 156px;
+    height: 40px;
+  }
+}
+
+
+/* Start Bubbles */
+.bubbles_section{
+  padding-bottom: 40px;
+}
+
+.box {
+    height: 295px;
+    width: 295px;
+    position: relative;
+    border-radius: 100%;
+    overflow: hidden;
+    -webkit-mask-image: -webkit-radial-gradient(#fff, #000)
+}
+
+.box.mobile {
+    background: #fef1de
+}
+
+.box.mobile .water {
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff8820), to(#f1e213));
+    background: linear-gradient(180deg, #ff8820, #f1e213)
+}
+
+.box.mobile .water .water_wave_front {
+    fill: #ff8820
+}
+
+.box.mobile .water .water_wave_back {
+    fill: rgba(255, 136, 32, .5)
+}
+
+.box.web {
+    background: #defee5
+}
+
+.box.web .water {
+    background: -webkit-gradient(linear, left top, left bottom, from(#24ca6c), to(#47dfc0));
+    background: linear-gradient(180deg, #24ca6c, #47dfc0)
+}
+
+.box.web .water .water_wave_front {
+    fill: #24ca6c
+}
+
+.box.web .water .water_wave_back {
+    fill: rgba(36, 202, 108, .5)
+}
+
+.box.desktop {
+    background: #def5fe
+}
+
+.box.desktop .water {
+    background: -webkit-gradient(linear, left top, left bottom, from(#1abffe), to(#26e7ee));
+    background: linear-gradient(180deg, #1abffe, #26e7ee)
+}
+
+.box.desktop .water .water_wave_front {
+    fill: #1abffe
+}
+
+.box.desktop .water .water_wave_back {
+    fill: rgba(38, 231, 238, .5)
+}
+
+.box .percent {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: -webkit-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    color: #185477;
+    font-size: 2rem;
+}
+
+.box .percent .percent-count {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.box .percent .percent-count p {
+    opacity: .8
+}
+
+.box .water {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    background: #4d6de3;
+    -webkit-transition: all .3s;
+    transition: all .3s
+}
+
+.box .water_wave {
+    width: 200%;
+    position: absolute;
+    bottom: 100%
+}
+
+.box .water_wave_back {
+    right: 0;
+    fill: #c7eeff;
+    -webkit-animation: wave-back 2.2s infinite linear;
+    animation: wave-back 2.2s infinite linear
+}
+
+.box .water_wave_front {
+    left: 0;
+    fill: #4d6de3;
+    margin-bottom: -1px;
+    -webkit-animation: wave-front 1.1s infinite linear;
+    animation: wave-front 1.1s infinite linear
+}
+
+@-webkit-keyframes wave-front {
+    to {
+        -webkit-transform: translate(-50%);
+        transform: translate(-50%)
+    }
+}
+
+@keyframes wave-front {
+    to {
+        -webkit-transform: translate(-50%);
+        transform: translate(-50%)
+    }
+}
+
+@-webkit-keyframes wave-back {
+    to {
+        -webkit-transform: translate(50%);
+        transform: translate(50%)
+    }
+}
+
+@keyframes wave-back {
+    to {
+        -webkit-transform: translate(50%);
+        transform: translate(50%)
+    }
+}
+
+@media (max-width:991.98px) {
+    .box {
+        width: 200px;
+        height: 200px
+    }
+}
+
+@media (max-width:767.98px) {
+    .box {
+        width: 280px;
+        height: 280px;
+        margin: 0 auto 50px
+    }
+
+    .box.desktop {
+        margin-bottom: 0
+    }
+}
+
+/* End Bubbles */
