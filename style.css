@@ -18,7 +18,7 @@ Text Domain: twentynineteen-child
     margin-bottom: 0;
     position: absolute;
     right: calc(100% + (1.25 * 1rem));
-    top: 4px;
+    top: -14px;
     z-index: 999;
   }
 }
@@ -50,6 +50,91 @@ Text Domain: twentynineteen-child
 }
 
 
+@media only screen and (min-width: 768px) {
+  .site-header {
+    margin: 0;
+    padding: 1rem 0;
+  }
+  .site-header.featured-image {
+    min-height: 100vh;
+    margin-bottom: 3rem;
+  }
+}
+
+
+.entry .entry-header {
+  margin: 0;
+  position: relative;
+}
+
+@media only screen and (min-width: 768px) {
+  .entry .entry-header {
+    margin: 0;
+  }
+}
+
+
+
+.entry .entry-content > *.alignfull,
+.entry .entry-summary > *.alignfull {
+  position: relative;
+  left: -1rem;
+  width: calc( 100% + (2 * 1rem));
+  max-width: calc( 100% + (2 * 1rem));
+  clear: both;
+}
+
+@media only screen and (min-width: 768px) {
+  .entry .entry-content > *.alignfull,
+  .entry .entry-summary > *.alignfull {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    left: calc( -12.5% - 75px);
+    width: calc( 125% + 150px);
+    max-width: calc( 125% + 150px);
+  }
+}
+
+
+.contact_item_icon_box{
+  min-height: 43px;
+  margin-top: 32px;
+  margin-bottom: 22px;
+  position: relative;
+}
+
+.contact_item_icon{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  max-height: 43px;
+}
+
+
+footer.site-footer{
+  background-color: #fcf9ff;
+}
+
+/* Start Contact_form */
+input[type=text], input[type=email], input[type=tel]{
+  border: 1px solid #dedede;
+  border-radius: 3px;
+  max-width: 260px;
+}
+
+textarea{
+  resize: none;
+  border: 1px solid #dedede;
+  border-radius: 3px;
+  max-width: 700px;
+  height: 150px;
+}
+
+
+/* End Contact_form */
 /* Start Bubbles */
 .bubbles_section{
   padding-bottom: 40px;
