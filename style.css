@@ -7,6 +7,12 @@ Version: 1.0.0
 Text Domain: twentynineteen-child
 */
 
+a:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+
 .site-logo {
   position: relative;
   z-index: 999;
@@ -39,7 +45,7 @@ Text Domain: twentynineteen-child
 }
 
 .site-logo .custom-logo-link:hover, .site-logo .custom-logo-link:active, .site-logo .custom-logo-link:focus {
-  box-shadow: 0 0 0 2px black;
+  box-shadow: 0 0 0 0px black;
 }
 
 @media only screen and (min-width: 768px) {
@@ -95,7 +101,69 @@ Text Domain: twentynineteen-child
   }
 }
 
+/* Start !Block styles */
 
+
+@media only screen and (min-width: 768px) {
+  .entry .entry-content > *,
+  .entry .entry-summary > * {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1168px) {
+  .entry .entry-content > *,
+  .entry .entry-summary > * {
+    max-width: 100%;
+  }
+}
+
+
+
+@media only screen and (min-width: 768px) {
+  .entry .entry-content .wp-block-cover-image.alignfull .wp-block-cover-image-text,
+  .entry .entry-content .wp-block-cover-image.alignfull .wp-block-cover-text,
+  .entry .entry-content .wp-block-cover-image.alignfull h2,
+  .entry .entry-content .wp-block-cover.alignfull .wp-block-cover-image-text,
+  .entry .entry-content .wp-block-cover.alignfull .wp-block-cover-text,
+  .entry .entry-content .wp-block-cover.alignfull h2 {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1168px) {
+  .entry .entry-content .wp-block-cover-image.alignfull .wp-block-cover-image-text,
+  .entry .entry-content .wp-block-cover-image.alignfull .wp-block-cover-text,
+  .entry .entry-content .wp-block-cover-image.alignfull h2,
+  .entry .entry-content .wp-block-cover.alignfull .wp-block-cover-image-text,
+  .entry .entry-content .wp-block-cover.alignfull .wp-block-cover-text,
+  .entry .entry-content .wp-block-cover.alignfull h2 {
+    max-width: 100%;
+  }
+}
+
+/* End !Block styles */
+/* Start Goals page */
+
+figure.switzerland_map img{
+  margin-top: 70px;
+}
+
+figure.ukraine_map img{
+  margin-top: 70px;
+
+}
+
+figure.goals_figure_1 img{
+   margin-top: 56px;
+}
+
+figure.goals_figure_2 img{
+   margin-top: 56px;
+}
+
+/* End Goals page */
+/* Start Contact page */
 .contact_item_icon_box{
   min-height: 43px;
   margin-top: 32px;
@@ -118,23 +186,23 @@ footer.site-footer{
   background-color: #fcf9ff;
 }
 
-/* Start Contact_form */
+
 input[type=text], input[type=email], input[type=tel]{
   border: 1px solid #dedede;
-  border-radius: 3px;
-  max-width: 260px;
+  border-radius: 5px;
+  max-width: 371px;
 }
 
 textarea{
   resize: none;
   border: 1px solid #dedede;
   border-radius: 3px;
-  max-width: 700px;
+  max-width: 371px;
   height: 150px;
 }
 
 
-/* End Contact_form */
+/* End  Contact page */
 /* Start Bubbles */
 .bubbles_section{
   padding-bottom: 40px;
