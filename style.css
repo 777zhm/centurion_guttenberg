@@ -12,6 +12,10 @@ a:focus {
     text-decoration: none;
 }
 
+span.colored{
+  color: #3158af;
+  font-weight: 600;
+}
 
 .site-logo {
   position: relative;
@@ -143,6 +147,25 @@ a:focus {
 }
 
 /* End !Block styles */
+/* Start Main page */
+.advantage_item_icon_box{
+  min-height: 100px;
+  margin-top: 32px;
+  margin-bottom: 22px;
+  position: relative;
+}
+
+.advantage_item_icon{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  max-height: 77px;
+}
+
+/* End Main page */
 /* Start Goals page */
 
 figure.switzerland_map img{
@@ -203,7 +226,60 @@ textarea{
 
 
 /* End  Contact page */
+/* Start Social menu */
+.site-info{
+  position: relative;
+}
+
+nav.social-navigation {
+  position: absolute;
+  right: 0;
+  margin-top: 0;
+  text-align: right;
+  max-width: 120px;
+  display: inline-block;
+}
+
+.social-navigation ul.social-links-menu li a {
+  border-bottom: 1px solid transparent;
+  display: block;
+  color: #3158af;
+  margin-bottom: -1px;
+  transition: opacity 110ms ease-in-out;
+}
+
+.social-navigation ul.social-links-menu li a:hover, .social-navigation ul.social-links-menu li a:active {
+  color: #3158af;
+  opacity: 0.6;
+}
+
+.social-navigation ul.social-links-menu li a:focus {
+  color: #3158af;
+  opacity: 1;
+  border-bottom: 1px solid #3158af;
+}
+
+.social-navigation ul.social-links-menu li a svg {
+  display: block;
+  width: 32px;
+  height: 32px;
+  transform: translateZ(0);
+}
+
+#colophon .site-info {
+  color: #3158af;
+}
+
+
+/* End Social menu */
+
 /* Start Bubbles */
+.text_on_bubble{
+	text-align: center;
+	font-size: 32px;
+	font-family: arial;
+}
+
 .bubbles_section{
   padding-bottom: 40px;
 }
@@ -218,54 +294,57 @@ textarea{
 }
 
 .box.mobile {
-    background: #fef1de
+    background: #d4d4d4;
+    font-family: arial;
 }
 
 .box.mobile .water {
-    background: -webkit-gradient(linear, left top, left bottom, from(#ff8820), to(#f1e213));
-    background: linear-gradient(180deg, #ff8820, #f1e213)
+    background: -webkit-gradient(linear, left top, left bottom, from(#2C2416), to(#453823 ));
+    background: linear-gradient(180deg, #2C2416, #453823 )
 }
 
 .box.mobile .water .water_wave_front {
-    fill: #ff8820
+    fill: #2C2416
 }
 
 .box.mobile .water .water_wave_back {
-    fill: rgba(255, 136, 32, .5)
+    fill: rgba(44, 36, 22, .7)
 }
 
 .box.web {
-    background: #defee5
+    background: #d4d4d4;
+    font-family: arial;
 }
 
 .box.web .water {
-    background: -webkit-gradient(linear, left top, left bottom, from(#24ca6c), to(#47dfc0));
-    background: linear-gradient(180deg, #24ca6c, #47dfc0)
+    background: -webkit-gradient(linear, left top, left bottom, from(#2C2416), to(#453823 ));
+    background: linear-gradient(180deg, #2C2416, #453823 )
 }
 
 .box.web .water .water_wave_front {
-    fill: #24ca6c
+    fill: #2C2416
 }
 
 .box.web .water .water_wave_back {
-    fill: rgba(36, 202, 108, .5)
+    fill: rgba(44, 36, 22, .7)
 }
 
 .box.desktop {
-    background: #def5fe
+    background: #d4d4d4;
+    font-family: arial;
 }
 
 .box.desktop .water {
-    background: -webkit-gradient(linear, left top, left bottom, from(#1abffe), to(#26e7ee));
-    background: linear-gradient(180deg, #1abffe, #26e7ee)
+    background: -webkit-gradient(linear, left top, left bottom, from(#2C2416), to(#453823 ));
+    background: linear-gradient(180deg, #2C2416, #453823 )
 }
 
 .box.desktop .water .water_wave_front {
-    fill: #1abffe
+    fill: #2C2416
 }
 
 .box.desktop .water .water_wave_back {
-    fill: rgba(38, 231, 238, .5)
+    fill: rgba(44, 36, 22, .7)
 }
 
 .box .percent {
@@ -289,14 +368,15 @@ textarea{
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    color: #185477;
+    color: #ffffff;
     font-size: 2rem;
 }
 
 .box .percent .percent-count {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex
+/*    display: -webkit-box;
+    display: -ms-flexbox;*/
+    display: none;
+    visibility: hidden;
 }
 
 .box .percent .percent-count p {

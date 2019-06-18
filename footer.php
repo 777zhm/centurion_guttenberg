@@ -28,19 +28,24 @@
 				the_privacy_policy_link( '', '<span role="separator" aria-hidden="true"></span>' );
 			}
 			?>
-			<?php if ( has_nav_menu( 'footer' ) ) : ?>
-				<nav class="footer-navigation" aria-label="<?php esc_attr_e( 'Footer Menu', 'twentynineteen' ); ?>">
+			
+
+			<?php if ( has_nav_menu( 'social' ) ) : ?>
+				<nav class="social-navigation" aria-label="<?php esc_attr_e( 'Social Links Menu', 'twentynineteen' ); ?>">
 					<?php
 					wp_nav_menu(
 						array(
-							'theme_location' => 'footer',
-							'menu_class'     => 'footer-menu',
+							'theme_location' => 'social',
+							'menu_class'     => 'social-links-menu',
+							'link_before'    => '<span class="screen-reader-text">',
+							'link_after'     => '</span>' . twentynineteen_get_icon_svg( 'link' ),
 							'depth'          => 1,
 						)
 					);
 					?>
-				</nav><!-- .footer-navigation -->
+				</nav><!-- .social-navigation -->
 			<?php endif; ?>
+			
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 
