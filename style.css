@@ -9,7 +9,7 @@ Text Domain: twentynineteen-child
 
 html, body{
   font-family: Arial, sans-serif;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 a:focus {
@@ -24,6 +24,20 @@ span.colored{
 
 h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover{
   color: #3158af;
+}
+
+.divider_custom{
+	width: 100%;
+	max-width: 100%!important;
+}
+
+h1:not(.site-title):before, h2:before {
+    background: #767676;
+    content: "";
+    display: block;
+    height: 0;
+    margin: 1rem 0;
+    width: 1em;
 }
 
 .site-logo {
@@ -239,14 +253,6 @@ figure.ukraine_map img{
 
 }
 
-/*figure.goals_figure_1 img{
-   margin-top: 56px;
-}
-
-figure.goals_figure_2 img{
-   margin-top: 56px;
-}
-*/
 /* End Goals page */
 /* Start Contact page */
 .contact_item_icon_box{
@@ -267,32 +273,49 @@ figure.goals_figure_2 img{
 }
 
 
-footer.site-footer{
-  background-color: #fcf9ff;
+form.wpcf7-form{
+	margin: auto;
+	position: relative;
+	max-width: 360px;
 }
 
+label.contact_form_label{
+	position: absolute;
+	left: 0;
+}
 
 input[type=text], input[type=email], input[type=tel]{
   border: 1px solid #dedede;
   border-radius: 5px;
-  max-width: 371px;
+  max-width: 360px;
+  margin-bottom: 16px;
 }
 
 textarea{
   resize: none;
   border: 1px solid #dedede;
   border-radius: 3px;
-  max-width: 371px;
+  max-width: 360px;
   height: 150px;
+
+  margin: auto;
 }
 
-
+input[type="submit"].wpcf7-submit{
+  position: absolute;
+  left: 150px;
+}
 /* End  Contact page */
 /* Start Social menu */
 
 nav.social-navigation {
   text-align: right;
 }
+
+footer.site-footer{
+  background-color: #fcf9ff;
+}
+
 
 .social-navigation ul.social-links-menu li a {
   border-bottom: 1px solid transparent;
