@@ -7,6 +7,11 @@ Version: 1.0.0
 Text Domain: twentynineteen-child
 */
 
+html, body{
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+}
+
 a:focus {
     outline: none;
     text-decoration: none;
@@ -15,6 +20,10 @@ a:focus {
 span.colored{
   color: #3158af;
   font-weight: 600;
+}
+
+h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover{
+  color: #3158af;
 }
 
 .site-logo {
@@ -28,7 +37,7 @@ span.colored{
     margin-bottom: 0;
     position: absolute;
     right: calc(100% + (1.25 * 1rem));
-    top: -14px;
+    top: -16px;
     z-index: 999;
   }
 }
@@ -147,6 +156,59 @@ span.colored{
 }
 
 /* End !Block styles */
+/* Start Main Menu */
+.main-navigation .main-menu > li {
+  color: #0073aa;
+  display: inline;
+  position: relative;
+}
+
+.main-navigation .main-menu > li > a {
+  font-weight: 700;
+  color: #0073aa;
+  margin-right: 0.5rem;
+  position: relative;
+}
+
+.main-navigation .main-menu > li > a + svg {
+  margin-right: 0.5rem;
+}
+
+.main-navigation .main-menu > li > a:hover,
+.main-navigation .main-menu > li > a:hover + svg {
+  color: #3158af;
+}
+
+.main-menu li a:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    
+    bottom: -6px;
+    left: 0;
+    border-bottom: 2px solid #3158af;
+    border-radius: 2px;
+
+    width: 0%;
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+}
+
+.main-menu li a:hover:after {
+    width: 100%;
+}
+
+.main-menu li.current-menu-item a{
+    color: #3158af;
+}
+
+.main-menu li.current-menu-item a:after{
+    width: 100%;
+}
+
+/* End Main Menu */
 /* Start Main page */
 .advantage_item_icon_box{
   min-height: 100px;
@@ -177,14 +239,14 @@ figure.ukraine_map img{
 
 }
 
-figure.goals_figure_1 img{
+/*figure.goals_figure_1 img{
    margin-top: 56px;
 }
 
 figure.goals_figure_2 img{
    margin-top: 56px;
 }
-
+*/
 /* End Goals page */
 /* Start Contact page */
 .contact_item_icon_box{
@@ -227,17 +289,9 @@ textarea{
 
 /* End  Contact page */
 /* Start Social menu */
-.site-info{
-  position: relative;
-}
 
 nav.social-navigation {
-  position: absolute;
-  right: 0;
-  margin-top: 0;
   text-align: right;
-  max-width: 120px;
-  display: inline-block;
 }
 
 .social-navigation ul.social-links-menu li a {
@@ -276,7 +330,7 @@ nav.social-navigation {
 /* Start Bubbles */
 .text_on_bubble{
 	text-align: center;
-	font-size: 32px;
+	font-size: 22px;
 	font-family: arial;
 }
 
@@ -285,13 +339,15 @@ nav.social-navigation {
 }
 
 .box {
-    height: 295px;
-    width: 295px;
+    height: 140px;
+    width: 140px;
     position: relative;
     border-radius: 100%;
     overflow: hidden;
     -webkit-mask-image: -webkit-radial-gradient(#fff, #000)
 }
+
+/* Start Oil bubbles color  */
 
 .box.mobile {
     background: #d4d4d4;
@@ -346,6 +402,66 @@ nav.social-navigation {
 .box.desktop .water .water_wave_back {
     fill: rgba(44, 36, 22, .7)
 }
+
+/* End Oil bubbles color  */
+
+/* Start SOFTs bubbles color  */
+
+.box.mobile_s {
+    background: #d4d4d4;
+    font-family: arial;
+}
+
+.box.mobile_s .water {
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFD700), to(#c4a500 ));
+    background: linear-gradient(180deg, #FFD700, #c4a500 )
+}
+
+.box.mobile_s .water .water_wave_front {
+    fill: #FFD700
+}
+
+.box.mobile_s .water .water_wave_back {
+     fill: rgba(196, 165, 0, .7);
+}
+
+.box.web_s {
+    background: #d4d4d4;
+    font-family: arial;
+}
+
+.box.web_s .water {
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFD700), to(#c4a500 ));
+    background: linear-gradient(180deg, #FFD700, #c4a500 )
+}
+
+.box.web_s .water .water_wave_front {
+    fill: #FFD700
+}
+
+.box.web_s .water .water_wave_back {
+    fill: rgba(196, 165, 0, .7);
+}
+
+.box.desktop_s {
+    background: #d4d4d4;
+    font-family: arial;
+}
+
+.box.desktop_s .water {
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFD700), to(#c4a500 ));
+    background: linear-gradient(180deg, #FFD700, #c4a500 )
+}
+
+.box.desktop_s .water .water_wave_front {
+    fill: #FFD700
+}
+
+.box.desktop_s .water .water_wave_back {
+     fill: rgba(196, 165, 0, .7);
+}
+
+/* End SOFTs bubbles color  */
 
 .box .percent {
     position: absolute;
@@ -448,21 +564,25 @@ nav.social-navigation {
 
 @media (max-width:991.98px) {
     .box {
-        width: 200px;
-        height: 200px
+        width: 140px;
+        height: 140px
     }
 }
 
 @media (max-width:767.98px) {
     .box {
-        width: 280px;
-        height: 280px;
+        width: 140px;
+        height: 140px;
         margin: 0 auto 50px
     }
 
     .box.desktop {
         margin-bottom: 0
     }
+
+    .box.desktop_s {
+        margin-bottom: 0
+    }
 }
 
-/* End Bubbles */
+/* End Bubbles 
