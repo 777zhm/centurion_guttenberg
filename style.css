@@ -26,6 +26,10 @@ h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover{
   color: #3158af;
 }
 
+h4, h5, h6{
+  color: #3158af;
+}
+
 .divider_custom{
 	width: 100%;
 	max-width: 100%!important;
