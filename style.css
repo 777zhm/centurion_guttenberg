@@ -228,22 +228,24 @@ h1:not(.site-title):before, h2:before {
 
 /* End Main Menu */
 /* Start Main page */
-.advantage_item_icon_box{
-  min-height: 100px;
+.expertise_item_icon_box{
+  min-height: 43px;
   margin-top: 32px;
   margin-bottom: 22px;
   position: relative;
 }
 
-.advantage_item_icon{
+.expertise_item_icon{
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   margin: auto;
-  max-height: 77px;
+  max-height: 80px;
 }
+
+
 
 /* End Main page */
 /* Start Goals page */
