@@ -229,9 +229,9 @@ h1:not(.site-title):before, h2:before {
 /* End Main Menu */
 /* Start Main page */
 .expertise_item_icon_box{
-  min-height: 43px;
-  margin-top: 32px;
-  margin-bottom: 22px;
+  min-height: 90px;
+  margin-top: 40px;
+  margin-bottom: 0px;
   position: relative;
 }
 
@@ -245,6 +245,22 @@ h1:not(.site-title):before, h2:before {
   max-height: 80px;
 }
 
+.objective_item_icon_box{
+  min-height: 130px;
+  margin-top: 40px;
+  margin-bottom: 0px;
+  position: relative;
+}
+
+.objective_item_icon{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  max-height: 130px;
+}
 
 
 /* End Main page */
