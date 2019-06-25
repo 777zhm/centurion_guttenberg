@@ -246,9 +246,10 @@ h1:not(.site-title):before, h2:before {
 }
 
 .objective_item_icon_box{
-  min-height: 130px;
-  margin-top: 40px;
+  min-height: 90px;
+  margin-top: 10px;
   margin-bottom: 0px;
+  padding-left: 120px;
   position: relative;
 }
 
@@ -257,9 +258,8 @@ h1:not(.site-title):before, h2:before {
   top: 0;
   bottom: 0;
   left: 0;
-  right: 0;
   margin: auto;
-  max-height: 130px;
+  max-height: 90px;
 }
 
 
