@@ -264,7 +264,7 @@ h1:not(.site-title):before, h2:before {
 
 
 /* End Main page */
-/* Start Goals page */
+/* Start Team page */
 
 figure.switzerland_map img{
   margin-top: 70px;
@@ -275,7 +275,15 @@ figure.ukraine_map img{
 
 }
 
-/* End Goals page */
+
+@media only screen and (min-width: 768px){
+.entry .entry-content .wp-block-image.founders_photo .aligncenter {
+    margin: auto; 
+}
+}
+
+
+/* End Team page */
 /* Start Contact page */
 .contact_item_icon_box{
   min-height: 43px;
